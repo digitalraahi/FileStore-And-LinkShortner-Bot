@@ -11,10 +11,10 @@ def is_enabled(value, default):
         return default
 
 # Bot information
-SESSION = environ.get('SESSION', 'Hemant_search')
+SESSION = environ.get('SESSION', 'Acro_search')
 API_ID = int(environ.get('API_ID', '28125646'))
 API_HASH = environ.get('API_HASH', '7c98e840c4b8972ebee6cbdea31425c2')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6352933340:AAEXSoI0mLy3KcaGmVyBEWeo5vZBF37E92M")
+BOT_TOKEN = environ.get('BOT_TOKEN', "6318032698:AAHLM2sVl2mVZ8YJgpHsILp1A9GLu8ZAytE")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -49,7 +49,7 @@ LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False")
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', ''))
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1001625635462')).split()]
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1001802238136')).split()]
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "False")), True)
